@@ -13,11 +13,12 @@ namespace DiceRollGame
             Console.WriteLine("Let's play a dice rolling game with two 6-sided dice.");
             Console.WriteLine("You roll first, then the computer will roll.");
             Console.WriteLine("The first one to get to 20 points wins.");
-            Console.WriteLine("Now let's begin!" + Environment.NewLine);
+            Console.WriteLine("Now let's begin!\n");
 
             //counters for the computer and user scores 
             int sum2 = 0;
             int sum4 = 0;
+
 
             //A loop that allows the user to iniate both their roll and computer's roll by 
             //typing in roll. 
@@ -37,9 +38,9 @@ namespace DiceRollGame
                 sum2 += score1 + score2;
 
                 //prints the user's current dice roll sum, and their current score
-                Console.WriteLine(Environment.NewLine + $"{score1} + {score2} = {sum}");
+                Console.WriteLine($"\n{score1} + {score2} = {sum}");
                 Console.WriteLine($"Your dice roll sum is : {sum}");
-                Console.WriteLine($"Your current score is : {sum2}" + Environment.NewLine);
+                Console.WriteLine($"Your current score is : {sum2}\n");
 
                 //stops games if user's score goes above 20
                 if (sum2 >= 20)
